@@ -67,15 +67,22 @@
         </div>
     </div>
 
+    
+
             <div class="row row-content align-items-center">
-                <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4  col-md-3">
                     <h2> Featured Campsites </h2>
                 </div>
                 <div class="col">
+                    <div class="media">
+                    <div class="media-body align-self-center">
                     <h3> React Lake Campground </h3>
-                    <p> Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    <p class="d-none d-sm-block"> Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                 </div>
+                <img class="d-flex ml-3 img-thumbnail"src="img/react-lake-thumb.jpg" alt="React Lake"/>
             </div>
+        </div>
+    </div>
 
             <div class="row row-content align-items-center">
                 <div class="col-sm-4 order-sm-last col-md-3">
@@ -90,7 +97,8 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+   
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -117,6 +125,51 @@
             </div>
         </div>
     </footer>
+
+    <div class="row row-content align-items-center">
+        <div class="col-sm-6 mx auto">
+            <div class="card">
+                <h3 class="card-header bg-info text-white"> Reserve a Campsite </h3>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                            <label for="numCampers"> Number of Campers </label>
+                            </div>
+                            <div class="col">
+                            <select class="form-control" name="numCampers"id="numCampers">
+                                <option> Select... </option>
+                                <option value="1"> 1  </option>
+                                <option value="2"> 2  </option>
+                                <option value="3"> 3  </option>
+                                <option value="4"> 4  </option>
+                                <option value="5"> 5  </option>
+                                <option value="6"> 6  </option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                            <label for="date"> Date: </label>
+                            </div>
+                            <div class="col-sm-6">
+                            <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
+                            </div>
+                        
+                        <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary" value="submit"> Search </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js">  </script>
