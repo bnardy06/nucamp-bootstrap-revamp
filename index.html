@@ -28,6 +28,10 @@
                     <h1> Nucamp </h1>
                     <h2> a better way to camp </h2>
                 </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    Nucamp
+                    <a class="btn btn-info bt-lg" href="reserveForm"> Reserve Campsite</a>
+                </div>
             </div>
         </div>
     </header>
@@ -127,15 +131,16 @@
     </footer>
 
     <div class="row row-content align-items-center">
-        <div class="col-sm-6 mx auto">
+        <div class="col-sm-6 mx-auto">
             <div class="card">
                 <h3 class="card-header bg-info text-white"> Reserve a Campsite </h3>
                 <div class="card-body">
-                    <form>
+                    
+                    <form id="reserveForm">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                            <label for="numCampers"> Number of Campers </label>
+                            <label for=""> Number of Campers </label>
                             </div>
                             <div class="col">
                             <select class="form-control" name="numCampers"id="numCampers">
@@ -148,12 +153,11 @@
                                 <option value="6"> 6  </option>
                             </select>
                             </div>
-                        </div>
+                        
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
                             <label for="date"> Date: </label>
-                            </div>
                             <div class="col-sm-6">
                             <input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" />
                             </div>
@@ -161,6 +165,9 @@
                         <div class="row">
                                 <div class="col">
                                     <button type="submit" class="btn btn-primary" value="submit"> Search </button>
+                                    </div>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
